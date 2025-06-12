@@ -3,9 +3,9 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from pathlib import Path
 
 def preprocess_students_performance(
-    input_path=Path(r'C:\Eksperimen_SML_Yorris_Siagian\StudentsPerformance.csv'),
-    output_path=Path(r'C:\Eksperimen_SML_Yorris_Siagian\students_performance_preprocessing.csv')):
-    
+    input_path=Path(__file__).resolve().parent.parent / 'namadataset_raw' / 'StudentsPerformance.csv',
+    output_path=Path(__file__).resolve().parent / 'students_performance_preprocessing.csv'):
+
     # Load dataset
     df = pd.read_csv(input_path)
 
