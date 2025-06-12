@@ -3,7 +3,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from pathlib import Path
 
 def preprocess_students_performance(
-    input_path=Path('dataset/StudentsPerformance.csv'),
+    input_path=Path('Dataset/StudentsPerformance.csv'),
     output_path=Path('preprocessing/students_performance_preprocessing.csv')):
 
     # Load dataset
